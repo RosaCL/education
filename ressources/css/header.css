@@ -1,0 +1,102 @@
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 1.5rem 7%;
+    background: var(--gradient);
+    box-shadow: var(--box-shadown);
+}
+
+header .logo{
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .navbar ul li{
+    margin: 0 1rem;
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    color: var(--white);
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color: var(--gray);
+}
+
+header #login{
+    color: var(--white);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+header #login:hover{
+    color: var(--gray);
+}
+
+header #menu{
+    font-size: 3rem;
+    color: var(--white);
+    cursor: pointer;
+    display: none;
+}
+.footer{
+    background: #181818ee;
+}
+.footer .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+    margin: 1.5rem;
+    text-align: center;
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+.footer .box-container .box p{
+    font-size: 1.7rem;
+    color: var(--light);
+    padding: .7rem 0;
+}
+.footer .box-container .box p i{
+    color: var(--blue);
+    padding-right: .5rem;
+}
+.footer .box-container .box a{
+    color: var(--blue-light);
+    padding: .5rem 0;
+    display: block;
+    font-size: 1.8rem;
+}
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+.footer .credit{
+    padding: 2rem 1rem;
+    font-size: 2rem;
+    color: var(--white);
+    background: var(--gray);
+    text-align: center;
+}
+.footer .credit a{
+    color: var(--blue);
+}

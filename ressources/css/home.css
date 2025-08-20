@@ -1,0 +1,46 @@
+.home{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url(../img/home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    height: 100vh;
+}
+.home h1{
+    font-size: 6rem;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+.home p{
+    font-size: 1.8rem;
+    color: var(--light);
+    padding: 1rem 0;
+    width: 70rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.home .shape{
+    position: absolute;
+    bottom: .1rem;
+    left: 0;
+    height: 15rem;
+    width: 100%;
+    background: url(../img/nuvem.png);
+    block-size: 100rem 15rem;
+    filter: drop-shadow(0 -.1rem .1rem rgba(0,0,0,.2));
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position-x: 0rem;
+    }
+    100%{
+        background-position-x: 100rem;
+    }
+}

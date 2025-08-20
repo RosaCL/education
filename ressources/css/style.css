@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url(./header.css);
+@import url(./media.css);
+@import url(./login-form.css);
+@import url(./home.css);
+@import url(./about.css);
+@import url(./course.css);
+@import url(./contact.css);
+
+:root {
+    --gradient: linear-gradient(90deg, #035AA6, #0396A6);
+    --blue: #0396A6;
+    --blue-light: #AEEBF2;
+    --white: #FFF;
+    --gray: #181818;
+    --light: #666;
+    --box-shadown: 0 .1rem .3rem rgba(0, 0, 0, .3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    transition: all .2s linear;
+}
+
+*::selection {
+    background: var(--blue);
+    color: var(--white);
+}
+
+html {
+    font-size: 62, 5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--gray);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--gradient);
+}
+
+.btn {
+    padding: .7rem 3rem;
+    font-size: 2rem;
+    color: var(--white);
+    background: var(--gradient);
+    border-radius: 5rem;
+    cursor: pointer;
+    box-shadow: var(--box-shadown);
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.btn:hover:before{
+    left: 120%;
+    transition: .3s linear;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: -100%;
+    background: #fffff9;
+    height: 150%;
+    width: 20%;
+    transform: rotate(25deg);
+    z-index: -1;
+}
+
+section {   
+    padding: 1rem 7%;
+    padding-top: 6rem;
+}
+
+.heading{
+    color: var(--light);
+    padding: 1rem;
+    font-size: 4rem;
+    text-align: center;
+}
